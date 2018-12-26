@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root{
+    --light-blue: #0066C3;
+    --blue:     #3A5695;
+    --dark-blue:#334C84 ;
+    --pink:     #F73F62;
+    --white-pink: #fb0030;
+    --green: #3AB54A;
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+
+
+a, a:hover, form.main>input.submit, .sub{
+    color: #ffffff;
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    cursor: pointer;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+    background-color: #E9EAEE;
+}
+
+
+input{
+    border: unset;
+}
+
+/*Form*/
+form.main>input, .sub{
+    color: white;
+    border-radius: 50px;
+    font-size: 1rem;
+    background: var( --dark-blue );
+
+}
+
+form.main>input::placeholder{
+    color: white;
+}
+
+form.main>input.submit,.sub{
+    background-color: var(--pink);
+    padding: .64rem 2.14rem;
+    font-size: .81rem;
+}
+
+form.main>input.submit:hover, .sub:hover{
+    background: var( --white-pink );
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+
+/*endForm*/
+/*CARD*/
+.card, .card-header ,.card-footer{
+    font-size: .9rem;
+    color: #6E7FAB;
+    padding: 0;
+    background: #fff;
+    border:none;
+}
+.card-header{
+color: var(--dark-blue);
+    border-bottom: 1px solid #EDF0F7;
+}
+.card-footer{
+    border-top: 1px solid #EDF0F7;
+}
+/*endCARD*/
+
+.edit{
+    position: absolute;
+    right: .3em;
+    top: .3em;
+    font-size: .9rem;
+    color: var(--dark-blue);
+}
+
+.edit:hover{
+    color: var(--pink);
+}
+
+
+
+
+/*customize*/
+li.item{
+  padding-top: 1rem;
+    border-top: 1px solid var(--dark-blue);
+    border-bottom: 1px solid var(--dark-blue);
+}
+.custom-control-label::before{
+    top:0;
+}
