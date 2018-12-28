@@ -4,7 +4,7 @@ Simple TODO application.
 ## Installation
 
 Use  [Docker](https://www.docker.com/) container platform.
-* paste in console  `docker-compose up --build`
+* paste in console  `$ docker-compose up --build` or `$ sudo docker rm $(sudo docker ps -aq)`
 * go to the app     `localhost::8080`
 
 ### Configuration (Optional)
