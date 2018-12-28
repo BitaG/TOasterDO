@@ -2,7 +2,7 @@
 Simple TODO application.
 
 ## Installation
-
+Must have **php7.1**
 Use  [Docker](https://www.docker.com/) container platform.
 * paste in console  `$ docker-compose up --build` or `$ sudo docker-compose up --build`
 * go to the app     `localhost::8080`
