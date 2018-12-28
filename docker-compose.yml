@@ -13,13 +13,17 @@ services:
        working_dir: ${APP_PATH_CONTAINER}
 
     db:
-      image: mariadb
+      image: mysql
+      command: --default-authentication-plugin=mysql_native_password
       restart: always
       environment:
         MYSQL_ROOT_PASSWORD: pass
         MYSQL_DATABASE: ${MYSQL_DATABASE}
+        MYSQL_USER: ${MYSQL_USER}
+        MYSQL_PASSWORD: ${MYSQL_USER_PASS}
       volumes:
-        - ${DB_PATH_HOST}:/var/lib/myaql
+        - ${DB_PATH_HOST}:/var/lib/myaqlZ
+        - ./toasterdo.sql:/docker-entrypoint-initdb.d/toasterdo.sql
 
     adminer:
       image: adminer
