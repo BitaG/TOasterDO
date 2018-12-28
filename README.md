@@ -15,7 +15,7 @@ Use  [Docker](https://www.docker.com/) container platform.
 * DB **user** - `define('DB_USER', 'toasterdo_user');` 
 * DB **pass** - `define('DB_PASS', 'toasterdo_pass');`
 
-##DEMO
+## DEMO
 
 You can see demo [here](http://demo.bitabit.com.ua/). 
 
